@@ -3,7 +3,7 @@ import styles from '../styles/BookOrder.module.css';
 
 const BookOrder = () => {
   // Your Google Form embedded URL
-  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfuY978EV69rbTmLvQi5NAfVbH88v_Myamdvbn8VreNkZw/viewform?embedded=true';
+  const googleFormUrl = 'https://docs.google.com/forms/d/1Y978EV69rbTmLvQi5NAfVbH88v_Myamdvbn8VreNkZw/viewform?embedded=true';
 
   return (
     <Layout>
