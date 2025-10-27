@@ -1,0 +1,97 @@
+/* Comprehensive CSS Module for All Pages - Placeholder Styles */
+
+/* ===== HOME PAGE STYLES ===== */
+.hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 2rem; text-align: center; border-radius: 10px; margin-bottom: 3rem; }
+.heroTitle { font-size: 3rem; margin-bottom: 1rem; font-weight: bold; }
+.heroSubtitle { font-size: 1.3rem; margin-bottom: 2rem; }
+.ctaButton { background-color: #e74c3c; color: white; padding: 1rem 2.5rem; border-radius: 5px; text-decoration: none; font-size: 1.2rem; font-weight: bold; display: inline-block; transition: all 0.3s; }
+.ctaButton:hover { background-color: #c0392b; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.features, .services { padding: 3rem 0; }
+.features h2, .services h2 { text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 2rem; }
+.featuresGrid, .servicesGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.featureCard, .serviceCard { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
+.featureCard:hover, .serviceCard:hover { transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.15); }
+.featureIcon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.featureCard h3, .serviceCard h3 { color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem; }
+.serviceCard p { color: #3498db; font-weight: bold; font-size: 1.3rem; }
+.serviceDesc { color: #7f8c8d; font-size: 1rem; font-weight: normal; }
+.viewMoreLink { display: block; text-align: center; margin-top: 2rem; color: #3498db; font-size: 1.2rem; text-decoration: none; font-weight: bold; }
+.cta { background-color: #ecf0f1; padding: 3rem; text-align: center; border-radius: 10px; margin-top: 3rem; }
+.cta h2 { font-size: 2rem; color: #2c3e50; margin-bottom: 1rem; }
+.ctaButtons { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; }
+.primaryButton, .secondaryButton { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s; }
+.primaryButton { background-color: #e74c3c; color: white; }
+.primaryButton:hover { background-color: #c0392b; }
+.secondaryButton { background-color: #3498db; color: white; }
+.secondaryButton:hover { background-color: #2980b9; }
+
+/* ===== LOCATION FINDER PAGE STYLES ===== */
+.container { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+.container h1 { font-size: 2.5rem; color: #2c3e50; text-align: center; margin-bottom: 1rem; }
+.description, .subtitle { text-align: center; font-size: 1.2rem; color: #7f8c8d; margin-bottom: 2rem; }
+.searchSection { display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; max-width: 600px; margin-left: auto; margin-right: auto; }
+.searchInput { flex: 1; padding: 1rem; border: 2px solid #ddd; border-radius: 5px; font-size: 1rem; }
+.searchButton, .submitButton { background-color: #3498db; color: white; padding: 1rem 2rem; border: none; border-radius: 5px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+.searchButton:hover, .submitButton:hover { background-color: #2980b9; }
+.locationsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+.locationCard { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.locationCard h3 { color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem; }
+.locationCard p { color: #7f8c8d; margin: 0.5rem 0; }
+.mapPlaceholder { background: #ecf0f1; padding: 3rem; text-align: center; border-radius: 10px; margin-top: 2rem; font-size: 1.5rem; }
+
+/* ===== SERVICES & PRICING PAGE STYLES ===== */
+.servicesGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; }
+.price { color: #e74c3c; font-size: 2rem; font-weight: bold; margin: 1rem 0; }
+.features { list-style: none; padding: 0; }
+.features li { padding: 0.5rem 0; color: #7f8c8d; position: relative; padding-left: 1.5rem; }
+.features li:before { content: "✓"; position: absolute; left: 0; color: #27ae60; font-weight: bold; }
+.additionalInfo { background: #ecf0f1; padding: 2rem; border-radius: 10px; margin-top: 3rem; }
+.additionalInfo h3 { color: #2c3e50; margin-bottom: 1rem; }
+.additionalInfo ul { list-style: none; padding: 0; }
+.additionalInfo ul li { padding: 0.5rem 0; color: #7f8c8d; position: relative; padding-left: 1.5rem; }
+.additionalInfo ul li:before { content: "•"; position: absolute; left: 0; color: #3498db; font-weight: bold; }
+
+/* ===== CONTACT PAGE STYLES ===== */
+.contactWrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin: 2rem 0; }
+.contactInfo { background: #ecf0f1; padding: 2rem; border-radius: 10px; }
+.contactInfo h2 { color: #2c3e50; margin-bottom: 1.5rem; }
+.infoItem { margin-bottom: 2rem; }
+.infoItem h3 { color: #3498db; margin-bottom: 0.5rem; font-size: 1.3rem; }
+.infoItem p { color: #7f8c8d; margin: 0.3rem 0; }
+.contactForm { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.contactForm h2 { color: #2c3e50; margin-bottom: 1.5rem; }
+.form { display: flex; flex-direction: column; gap: 1.5rem; }
+.formGroup { display: flex; flex-direction: column; }
+.formGroup label { color: #2c3e50; font-weight: bold; margin-bottom: 0.5rem; }
+.formGroup input, .formGroup textarea { padding: 0.8rem; border: 2px solid #ddd; border-radius: 5px; font-size: 1rem; font-family: inherit; }
+.formGroup input:focus, .formGroup textarea:focus { outline: none; border-color: #3498db; }
+.socialMedia { text-align: center; margin-top: 3rem; padding: 2rem; background: #ecf0f1; border-radius: 10px; }
+.socialMedia h2 { color: #2c3e50; margin-bottom: 1rem; }
+.socialIcons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.socialLink { padding: 0.8rem 1.5rem; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+.socialLink:hover { background: #2980b9; }
+
+/* ===== BOOK ORDER PAGE STYLES ===== */
+.infoSection { margin: 2rem 0; }
+.infoSection h2 { color: #2c3e50; text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+.benefitsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.benefit { text-align: center; padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.icon { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+.benefit h3 { color: #2c3e50; margin-bottom: 0.5rem; }
+.benefit p { color: #7f8c8d; }
+.formSection { margin: 3rem 0; }
+.formSection h2 { color: #2c3e50; text-align: center; font-size: 2rem; margin-bottom: 1rem; }
+.formDescription { text-align: center; color: #7f8c8d; margin-bottom: 2rem; font-size: 1.1rem; }
+.formContainer { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.googleFormWrapper { margin-bottom: 2rem; }
+.directLink { text-align: center; padding: 1.5rem; background: #ecf0f1; border-radius: 5px; }
+.formLink { color: #3498db; font-weight: bold; text-decoration: none; font-size: 1.1rem; }
+.formLink:hover { text-decoration: underline; }
+.instructions { background: #ecf0f1; padding: 2rem; border-radius: 10px; margin: 3rem 0; }
+.instructions h2 { color: #2c3e50; margin-bottom: 1.5rem; }
+.stepsList { padding-left: 1.5rem; }
+.stepsList li { margin-bottom: 1.5rem; color: #7f8c8d; line-height: 1.6; }
+.stepsList strong { color: #2c3e50; display: block; margin-bottom: 0.3rem; }
+.contactNote { text-align: center; padding: 2rem; background: #3498db; color: white; border-radius: 10px; margin-top: 3rem; }
+.contactNote p { margin: 0.5rem 0; font-size: 1.1rem; }
+.contactNote strong { font-size: 1.3rem; }
