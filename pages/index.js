@@ -1,40 +1,107 @@
-export default function Home() {
+import Layout from '../components/Layout';
+import Link from 'next/link';
+import styles from '../styles/Home.module.css';
+
+const Home = () => {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
-      <header style={{ backgroundColor: '#2c3e50', color: 'white', padding: '40px 20px', textAlign: 'center', borderRadius: '8px' }}>
-        <h1 style={{ fontSize: '48px', margin: '0' }}>Lokesh Laundry</h1>
-        <p style={{ fontSize: '20px', margin: '10px 0 0 0' }}>Your Trusted Laundry Service</p>
-      </header>
+    <Layout>
+      <div className={styles.hero}>
+        <h1 className={styles.heroTitle}>Welcome to Lokesh Laundry</h1>
+        <p className={styles.heroSubtitle}>
+          Your Trusted Partner for Professional Laundry Services
+        </p>
+        <Link href="/book-order" className={styles.ctaButton}>
+          Book Your Order Now
+        </Link>
+      </div>
 
-      <main style={{ padding: '40px 0' }}>
-        <section style={{ marginBottom: '40px' }}>
-          <h2 style={{ color: '#2c3e50', fontSize: '32px' }}>Welcome to Lokesh Laundry</h2>
-          <p style={{ fontSize: '18px', lineHeight: '1.6' }}>
-            We provide professional laundry services with care and attention to detail.
-            Your clothes are in safe hands!
-          </p>
-        </section>
+      <section className={styles.features}>
+        <h2>Why Choose Us?</h2>
+        <div className={styles.featuresGrid}>
+          <div className={styles.featureCard}>
+            <span className={styles.featureIcon}>💪</span>
+            <h3>Premium Quality</h3>
+            <p>We use high-quality detergents and advanced washing techniques to ensure your clothes look and feel their best.</p>
+          </div>
+          
+          <div className={styles.featureCard}>
+            <span className={styles.featureIcon}>🚚</span>
+            <h3>Free Pickup & Delivery</h3>
+            <p>Convenient doorstep service for orders above ₹500. We come to you!</p>
+          </div>
+          
+          <div className={styles.featureCard}>
+            <span className={styles.featureIcon}>⏱️</span>
+            <h3>Quick Turnaround</h3>
+            <p>24-48 hour standard service, with same-day express options available.</p>
+          </div>
+          
+          <div className={styles.featureCard}>
+            <span className={styles.featureIcon}>🍃</span>
+            <h3>Eco-Friendly</h3>
+            <p>We care about the environment. Eco-friendly detergents available upon request.</p>
+          </div>
+          
+          <div className={styles.featureCard}>
+            <span className={styles.featureIcon}>💰</span>
+            <h3>Affordable Pricing</h3>
+            <p>Competitive rates with transparent pricing. No hidden charges.</p>
+          </div>
+          
+          <div className={styles.featureCard}>
+            <span className={styles.featureIcon}>💕</span>
+            <h3>Care & Attention</h3>
+            <p>Every garment receives individual attention and care from our expert team.</p>
+          </div>
+        </div>
+      </section>
 
-        <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
-          <div style={{ backgroundColor: '#ecf0f1', padding: '30px', borderRadius: '8px', textAlign: 'center' }}>
-            <h3 style={{ color: '#2c3e50' }}>Wash & Fold</h3>
-            <p>Quick and efficient wash and fold service</p>
+      <section className={styles.services}>
+        <h2>Our Services</h2>
+        <div className={styles.servicesGrid}>
+          <div className={styles.serviceCard}>
+            <h3>Wash & Fold</h3>
+            <p>Starting at ₹50/kg</p>
+            <p className={styles.serviceDesc}>Professional washing with fabric softener, neatly folded and ready to wear.</p>
           </div>
-          <div style={{ backgroundColor: '#ecf0f1', padding: '30px', borderRadius: '8px', textAlign: 'center' }}>
-            <h3 style={{ color: '#2c3e50' }}>Dry Cleaning</h3>
-            <p>Professional dry cleaning for delicate items</p>
+          
+          <div className={styles.serviceCard}>
+            <h3>Wash & Iron</h3>
+            <p>Starting at ₹80/kg</p>
+            <p className={styles.serviceDesc}>Complete service with expert ironing and hangers provided.</p>
           </div>
-          <div style={{ backgroundColor: '#ecf0f1', padding: '30px', borderRadius: '8px', textAlign: 'center' }}>
-            <h3 style={{ color: '#2c3e50' }}>Express Service</h3>
-            <p>Same-day service for urgent needs</p>
+          
+          <div className={styles.serviceCard}>
+            <h3>Dry Cleaning</h3>
+            <p>Starting at ₹150/piece</p>
+            <p className={styles.serviceDesc}>Professional dry cleaning for delicate and special garments.</p>
           </div>
-        </section>
-      </main>
+          
+          <div className={styles.serviceCard}>
+            <h3>Express Service</h3>
+            <p>Same-day delivery</p>
+            <p className={styles.serviceDesc}>Need it fast? Get your laundry back within 12 hours.</p>
+          </div>
+        </div>
+        <Link href="/services-pricing" className={styles.viewMoreLink}>
+          View All Services & Pricing →
+        </Link>
+      </section>
 
-      <footer style={{ backgroundColor: '#34495e', color: 'white', padding: '20px', textAlign: 'center', borderRadius: '8px', marginTop: '40px' }}>
-        <p>© 2025 Lokesh Laundry. All rights reserved.</p>
-        <p>Contact us: info@lokeshlaundry.com | (555) 123-4567</p>
-      </footer>
-    </div>
+      <section className={styles.cta}>
+        <h2>Ready to Experience Premium Laundry Service?</h2>
+        <p>Book your order today and let us take care of your laundry needs!</p>
+        <div className={styles.ctaButtons}>
+          <Link href="/book-order" className={styles.primaryButton}>
+            Book Order
+          </Link>
+          <Link href="/location-finder" className={styles.secondaryButton}>
+            Find Location
+          </Link>
+        </div>
+      </section>
+    </Layout>
   );
-}
+};
+
+export default Home;
