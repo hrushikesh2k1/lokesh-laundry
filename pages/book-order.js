@@ -2,8 +2,8 @@ import Layout from '../components/Layout';
 import styles from '../styles/BookOrder.module.css';
 
 const BookOrder = () => {
-  // Replace this URL with your actual Google Form URL
-  const googleFormUrl = 'https://forms.google.com/YOUR_FORM_ID_HERE';
+  // Your Google Form embedded URL
+  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfuY978EV69rbTmLvQi5NAfVbH88v_Myamdvbn8VreNkZw/viewform?embedded=true';
 
   return (
     <Layout>
@@ -42,7 +42,7 @@ const BookOrder = () => {
         <div className={styles.formSection}>
           <h2>Book Your Order</h2>
           <p className={styles.formDescription}>
-            Please fill out the Google Form below with your details. We'll contact you within 1 hour to confirm your booking.
+            Please fill out the form below with your details. We'll contact you within 1 hour to confirm your booking.
           </p>
           
           <div className={styles.formContainer}>
