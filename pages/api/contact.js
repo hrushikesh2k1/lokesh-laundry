@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     // Email content
     const mailOptions = {
       from: `"Lokesh Laundry" <${process.env.SMTP_USER}>`,
-      to: "youremail@example.com", // 📩 your email address here
+      to: "hrushikeshprince@gmail.com", // 📩 your email address here
       subject: `New Contact Message: ${subject}`,
       html: `
         <h2>New Contact Message</h2>
