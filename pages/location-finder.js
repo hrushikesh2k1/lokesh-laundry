@@ -21,30 +21,16 @@ const LocationFinder = () => {
 
         <div className={styles.locationsGrid}>
           <div className={styles.locationCard}>
-            <h3>Downtown Branch</h3>
-            <p>123 Main Street, Downtown</p>
-            <p>Phone: +91 9876543210</p>
+            <h3>Hanamkonda</h3>
+            <p>Adalath, Kazipet</p>
+            <p>Phone: +91 9390256104</p>
             <p>Hours: Mon-Sat 8AM-8PM</p>
           </div>
           
           <div className={styles.locationCard}>
-            <h3>Uptown Branch</h3>
-            <p>456 Park Avenue, Uptown</p>
-            <p>Phone: +91 9876543211</p>
-            <p>Hours: Mon-Sat 8AM-8PM</p>
-          </div>
-          
-          <div className={styles.locationCard}>
-            <h3>East Side Branch</h3>
-            <p>789 Market Road, East Side</p>
-            <p>Phone: +91 9876543212</p>
-            <p>Hours: Mon-Sat 8AM-8PM</p>
-          </div>
-          
-          <div className={styles.locationCard}>
-            <h3>West End Branch</h3>
-            <p>321 Garden Lane, West End</p>
-            <p>Phone: +91 9876543213</p>
+            <h3>Hyderabad</h3>
+            <p>Uppal</p>
+            <p>Phone: +91 9390256104</p>
             <p>Hours: Mon-Sat 8AM-8PM</p>
           </div>
         </div>
