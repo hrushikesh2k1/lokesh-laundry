@@ -1,0 +1,26 @@
+/* Home Page Styles - Import from AllPages.module.css */
+/* These styles match the classes in AllPages.module.css */
+
+.hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 2rem; text-align: center; border-radius: 10px; margin-bottom: 3rem; }
+.heroTitle { font-size: 3rem; margin-bottom: 1rem; font-weight: bold; }
+.heroSubtitle { font-size: 1.3rem; margin-bottom: 2rem; }
+.ctaButton { background-color: #e74c3c; color: white; padding: 1rem 2.5rem; border-radius: 5px; text-decoration: none; font-size: 1.2rem; font-weight: bold; display: inline-block; transition: all 0.3s; }
+.ctaButton:hover { background-color: #c0392b; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.features, .services { padding: 3rem 0; }
+.features h2, .services h2 { text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 2rem; }
+.featuresGrid, .servicesGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.featureCard, .serviceCard { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
+.featureCard:hover, .serviceCard:hover { transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.15); }
+.featureIcon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.featureCard h3, .serviceCard h3 { color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem; }
+.serviceCard p { color: #3498db; font-weight: bold; font-size: 1.3rem; }
+.serviceDesc { color: #7f8c8d; font-size: 1rem; font-weight: normal; }
+.viewMoreLink { display: block; text-align: center; margin-top: 2rem; color: #3498db; font-size: 1.2rem; text-decoration: none; font-weight: bold; }
+.cta { background-color: #ecf0f1; padding: 3rem; text-align: center; border-radius: 10px; margin-top: 3rem; }
+.cta h2 { font-size: 2rem; color: #2c3e50; margin-bottom: 1rem; }
+.ctaButtons { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; }
+.primaryButton, .secondaryButton { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s; }
+.primaryButton { background-color: #e74c3c; color: white; }
+.primaryButton:hover { background-color: #c0392b; }
+.secondaryButton { background-color: #3498db; color: white; }
+.secondaryButton:hover { background-color: #2980b9; }
